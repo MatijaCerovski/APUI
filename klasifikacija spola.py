@@ -26,8 +26,8 @@ def main():
     random.shuffle(labeled_names)
 
     #Raspodjela imena 1
-    #featuresets = [(gender_features2(n), gender) for (n, gender) in labeled_names]
-    #train_set, test_set = featuresets[500:], featuresets[:500]
+    featuresets = [(gender_features(n), gender) for (n, gender) in labeled_names]
+    train_set, test_set = featuresets[500:], featuresets[:500]
 
     #Raspodjela imena 2
     train_names = labeled_names[1500:]
